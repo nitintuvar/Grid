@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    gap: 20px;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+}
+
+.navigation{
+    grid-column: 1/span 12;
+    background-color:aqua;
+}
+.sidebar{
+    grid-column: 1/span 2;
+    grid-row: 2/span 10;
+    background-color:green;
+}
+.panel{
+    grid-column: 3/span 8;
+    background-color:red;
+}
+.ads{
+    grid-column:11/span 2;
+    grid-row: 2/span 10;
+    background-color:purple;
+}
+.main{
+    grid-column:3/span 8;
+    grid-row: 3/span 9;
+    background-color:aquamarine;
+}
+.footer{
+    grid-column: 1/span 12;
+    background-color:darkred;
+}
